@@ -214,6 +214,11 @@ section.one .second {
 
 
 /* subsection */
+.first-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
 
 .article {
     display: flex;
