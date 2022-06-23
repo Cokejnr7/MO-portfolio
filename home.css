@@ -460,14 +460,17 @@ img:hover {
 
 /* CONTACT AND FOOTER */
 
-.four {
+.footer {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
 }
 
-.four div {
-    border: 3px solid palevioletred;
+.contact,
+.social-links-wrapper {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact {
@@ -475,7 +478,7 @@ img:hover {
     align-items: center;
 }
 
-.four h1 {
+.footer h1 {
     font-size: var(--contact);
     color: var(--tools);
 }
@@ -485,7 +488,7 @@ img:hover {
     color: var(--heading);
 }
 
-.four p {
+.footer p {
     color: var(--heading);
     font-size: var(--paragragh-intro);
     font-weight: 700;
