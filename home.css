@@ -106,18 +106,20 @@ body {
 
 nav {
     position: fixed;
-    border: 1px solid salmon;
     height: 100%;
     width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: var(--nav);
+
 }
 
 .logo {
     margin-top: 36px;
 }
+
+
 
 .links-wrapper {
     margin-bottom: 36px;
@@ -133,7 +135,6 @@ nav a {
 }
 
 main {
-    border: 1px solid rebeccapurple;
     position: sticky;
     left: 20%;
     width: 80%;
@@ -141,10 +142,6 @@ main {
     display: grid;
     grid-template-columns: auto;
     grid-auto-rows: minmax(700px, auto);
-}
-
-section {
-    border: 1px solid green;
 }
 
 /* heading style default */
@@ -191,7 +188,6 @@ section.one .first {
 }
 
 section.one .second {
-    border: 2px solid gray;
     flex: 2;
     display: flex;
     flex-direction: column-reverse;
@@ -203,10 +199,6 @@ section.one .second {
     grid-template-columns: auto;
     grid-template-rows: minmax(100px, auto);
     /* gap: 120px; */
-}
-
-.three>div {
-    border: 1px solid sienna;
 }
 
 
@@ -234,7 +226,6 @@ article {
     display: flex;
     gap: 158px;
     align-items: center;
-    border: 1px solid red;
     padding: 50px;
 }
 
@@ -430,7 +421,6 @@ img:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid skyblue;
 }
 
 .red-light {
@@ -467,7 +457,6 @@ img:hover {
 
 .contact,
 .social-links-wrapper {
-    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;

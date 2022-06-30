@@ -1,0 +1,646 @@
+@font-face {
+    font-family: TGBold;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-Bold.otf);
+}
+
+@font-face {
+    font-family: TGExtraBold;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: TGMedium;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-Medium.otf);
+}
+
+@font-face {
+    font-family: TGExtraLight;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: TGLight;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-Light.otf);
+}
+
+@font-face {
+    font-family: TGBlack;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-Black.otf);
+}
+
+@font-face {
+    font-family: TGSlanted;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-Slanted.otf);
+}
+
+@font-face {
+    font-family: TGExtraLightSlanted;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-ExtraLightSlanted.otf);
+}
+
+@font-face {
+    font-family: TGMediumSlanted;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-MediumSlanted.otf);
+}
+
+@font-face {
+    font-family: TGExtraBoldSlanted;
+    src: url(fonts/tomato_grotesk/TomatoGrotesk-ExtraBoldSlanted.otf);
+}
+
+
+
+:root {
+    /* fonts */
+    --medium: 'TGMedium';
+    --medium-slanted: 'TGMediumSlanted';
+    --light: 'TGLight';
+    --bold: 'TGBold';
+    --extra-bold: 'TGExtraBold';
+    --black: 'TGBlack';
+    --slant: 'TGslant';
+    --extra-light: 'TGExtraLight';
+    /* end of fonts */
+
+    /* colors */
+    --heading: #EA2127;
+    --text: #555555;
+    --nav: #000000;
+    --quote: #C4C4C4;
+    --quotes-mark: #EA212780;
+    --tools: #7D7D7D;
+    --body: #F7F1F0;
+    /* end of colors */
+
+    /* font size */
+    --heading-two: 4.53em;
+    --heading-three: 2em;
+    --paragragh-intro: 1.5em;
+    --paragraph: 1.25em;
+    --contact: 4em;
+    --about-work: 6em;
+    /* end of font-size */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--extra-light), sans-serif;
+    background-color: var(--body);
+    /* background-color: #2C2C2C; */
+}
+
+/* main {
+    visibility: hidden;
+} */
+
+nav {
+    height: 100%;
+    position: fixed;
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--nav);
+}
+
+nav a {
+    color: var(--nav);
+    text-decoration: none;
+}
+
+h2 {
+    font-family: var(--extra-bold), sans-serif;
+    font-weight: 800;
+    font-size: var(--heading-two);
+    line-height: 86.4px;
+    padding: 0;
+    margin: 0;
+    color: var(--heading);
+}
+
+h3 {
+    font-family: var(--bold), sans-serif;
+    font-weight: 800;
+    font-size: var(--heading-three);
+    line-height: 98%;
+}
+
+.logo {
+    margin-top: 36px;
+}
+
+.links-wrapper {
+    margin-bottom: 36px;
+}
+
+.links-wrapper li {
+    margin-bottom: 18px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: minmax(750px, auto);
+}
+
+/* section one */
+
+section.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.info {
+    display: flex;
+    gap: 36px;
+}
+
+.light-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.work {
+    font-family: var(--black), sans-serif;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 152%;
+}
+
+/* end of section one */
+
+/* section two */
+section.two {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 63px;
+}
+
+section.two .inner {
+    display: flex;
+}
+
+
+.about-work-header {
+    flex: 3;
+}
+
+.empty {
+    flex: 1;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+    align-items: start;
+    padding: 10px 0px 10px 10px;
+    /* gap: 10px; */
+
+}
+
+.empty {
+    flex: 1;
+}
+
+.not-empty {
+    flex: 4;
+}
+
+.inner_ {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.top {
+    width: 957px;
+    height: 595px;
+}
+
+.inn {
+    width: 957px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 80px;
+}
+
+.sub-headers>h4 {
+    color: var(--heading);
+}
+
+.sub-headers {
+    width: 150px;
+    height: 43px;
+    padding: 10px;
+}
+
+.set {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 2;
+}
+
+.about-work-header {
+    font-weight: 400;
+    font-size: var(--about-work);
+    color: var(--heading);
+    font-family: var(--light);
+    line-height: 112.5%;
+}
+
+.background-devon {
+    height: 833px;
+    background-image: url(images/devon_images/devon_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end of section two */
+
+/* images style */
+
+section.one img {
+    margin-top: 10px;
+    width: 957px;
+    height: 500px;
+}
+
+section.two img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* end of image styles */
+
+/* section three */
+
+section.three {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 63px;
+    padding: 80px 96px 0px 40px;
+}
+
+section.three p {
+    line-height: 32px;
+}
+
+section.three .wrapper {
+    gap: 25px;
+    align-items: space-around;
+}
+
+.section-three-note {
+    width: 93%;
+}
+
+.more {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-stream {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.main-stream span {
+    font-family: var(--medium), sans-serif;
+    font-weight: 500;
+    color: var(--heading);
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.credits span {
+    display: flex;
+    gap: 23px;
+}
+
+
+
+
+/* section four */
+
+section.four {
+    display: flex;
+    justify-content: end;
+    padding: 20px 0px;
+}
+
+.inclusivity {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 846px;
+    margin-top: 250px;
+}
+
+.inn_ {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(590px, auto);
+}
+
+.inn_ .first,
+.inn_ .second {
+    flex: 1;
+}
+
+.inn_ .second {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* section five */
+
+section.five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/* section six */
+
+section.six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.magazine {
+    background-image: url(images/light_theatres_images/magazine.png);
+    width: 100%;
+    height: 517px;
+}
+
+/* section seven */
+
+section.seven {
+    background-image: url(images/devon_images/jersey-collection.png);
+    height: 712px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.airport {
+    background-image: url(images/light_theatres_images/airport.png);
+    width: 100%;
+    height: 464px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iphone {
+    background-image: url(images/light_theatres_images/iphone.png);
+    width: 100%;
+    height: 464px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* secttion eight */
+
+section.eight {
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.home-away {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 44px;
+
+    width: 533px;
+    height: 174px;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 74px;
+    padding: 10px 231px 10px 281px;
+}
+
+/* section nine */
+
+section.nine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* section ten */
+section.ten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.billboard {
+    display: flex;
+    gap: 10px;
+}
+
+/* section eleven */
+section.eleven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.design-assets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 44px;
+    align-self: center;
+    width: 235px;
+    height: 221px;
+}
+
+.design-assets>h4,
+.art-direction>h4 {
+    color: var(--heading);
+}
+
+/* section twelve */
+.art-direction {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 78px;
+
+    width: 749px;
+    height: 160px;
+}
+
+section.twelve {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 261px;
+    padding-top: 80px;
+}
+
+/* section thirteen */
+
+section.thirteen {
+    height: 346px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.thirteen h3 {
+    font-weight: 700;
+    font-size: var(--heading-three);
+    line-height: 152%;
+    color: var(--tools);
+}
+
+/* section fourteen */
+
+section.fourteen {
+    height: 492px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 122px 10px 10px 130px;
+    gap: 99px;
+}
+
+section.fourteen h4 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 152%;
+    color: var(--heading);
+}
+
+section.fourteen h1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 152%;
+    color: var(--text);
+}
+
+.next-project {
+    display: flex;
+    gap: 57px;
+}
+
+
+/* CONTACT AND FOOTER */
+
+.footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 664px;
+
+}
+
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.footer h1 {
+    font-size: var(--contact);
+    color: var(--tools);
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--heading);
+}
+
+.footer p {
+    color: var(--heading);
+    font-size: var(--paragragh-intro);
+    font-weight: 700;
+}
+
+.contact>div {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--medium), sans-serif;
+    gap: 61px;
+}
+
+.social-links-wrapper {
+    display: flex;
+}
+
+.social-links {
+    display: flex;
+    gap: 122px;
+}
+
+.social-links a {
+    color: var(--nav);
+    font-weight: 700;
+    font-size: var(--paragraph);
+    font-family: var(--medium), sans-serif;
+    text-decoration: none;
+}
+
+.shift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* END OF CONTACT AND FOOTER */

@@ -106,7 +106,6 @@ body {
 
 nav {
     position: fixed;
-    border: 1px solid salmon;
     height: 100%;
     width: 20%;
     display: flex;
@@ -133,7 +132,6 @@ nav a {
 }
 
 main {
-    border: 1px solid rebeccapurple;
     position: sticky;
     left: 20%;
     width: 80%;
@@ -143,9 +141,6 @@ main {
     grid-auto-rows: minmax(700px, auto);
 }
 
-section {
-    border: 1px solid green;
-}
 
 /* heading style default */
 
@@ -191,7 +186,6 @@ section.one .first {
 }
 
 section.one .second {
-    border: 2px solid gray;
     flex: 2;
     display: flex;
     flex-direction: column-reverse;
@@ -205,9 +199,6 @@ section.one .second {
     /* gap: 120px; */
 }
 
-.three>div {
-    border: 1px solid sienna;
-}
 
 
 /* end of sections */
@@ -239,7 +230,6 @@ article {
     display: flex;
     gap: 158px;
     align-items: center;
-    border: 1px solid red;
     padding: 50px;
 }
 
@@ -435,7 +425,6 @@ img:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid skyblue;
 }
 
 .red-light {
@@ -465,14 +454,16 @@ img:hover {
 
 /* CONTACT AND FOOTER */
 
-.four {
+.footer {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
 }
 
-.four div {
-    border: 3px solid palevioletred;
+.contact,
+.social-links-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact {
@@ -480,7 +471,7 @@ img:hover {
     align-items: center;
 }
 
-.four h1 {
+.footer h1 {
     font-size: var(--contact);
     color: var(--tools);
 }
@@ -490,7 +481,7 @@ img:hover {
     color: var(--heading);
 }
 
-.four p {
+.footer p {
     color: var(--heading);
     font-size: var(--paragragh-intro);
     font-weight: 700;
