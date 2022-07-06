@@ -101,7 +101,6 @@ body {
 nav {
     height: 100%;
     position: fixed;
-    border: 1px solid salmon;
     height: 100%;
     width: 18%;
     display: flex;
@@ -123,6 +122,10 @@ h2 {
     padding: 0;
     margin: 0;
     color: var(--heading);
+}
+
+p {
+    font-size: var(--paragraph);
 }
 
 h3 {
@@ -160,13 +163,11 @@ section.one {
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    border: 2px solid magenta;
 }
 
 .info {
     display: flex;
     gap: 36px;
-    border: 1px solid red;
 }
 
 .light-info {
@@ -193,8 +194,11 @@ section.one {
 section.two {
     display: grid;
     grid-template-columns: auto;
-    border: 2px solid magenta;
     gap: 63px;
+}
+
+section.two .wrapper {
+    padding-top: 124px;
 }
 
 .wrapper {
@@ -210,7 +214,6 @@ section.two {
     align-items: start;
     padding: 10px 0px 10px 10px;
     gap: 10px;
-    border: 2px solid saddlebrown;
 }
 
 .empty {
@@ -224,12 +227,10 @@ section.two {
 .inner_ {
     display: flex;
     justify-content: center;
-    border: 2px solid #555555;
     gap: 80px;
 }
 
 .inn {
-    border: 2px solid saddlebrown;
     width: 957px;
     display: grid;
     grid-template-columns: auto;
@@ -238,6 +239,7 @@ section.two {
 
 .sub-headers>h4 {
     color: var(--heading);
+    font-size: 20px;
 }
 
 .sub-headers {
@@ -250,7 +252,6 @@ section.two {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    border: 2px solid #555555;
     flex: 2;
 }
 
@@ -267,6 +268,11 @@ section.two {
     background-image: url(images/red_alert_images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.top-image {
+    width: 957px;
+    height: 595px;
 }
 
 /* end of section two */
@@ -293,8 +299,66 @@ section.two img {
 section.three {
     display: grid;
     grid-template-columns: auto;
-    border: 2px solid magenta;
     gap: 63px;
+    padding: 30px 0px;
+}
+
+section.three .colour-set {
+    display: flex;
+    flex-direction: row;
+}
+
+section.three .first>p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.colour-set>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    /* gap: 10px; */
+
+    width: 157px;
+    height: 156px;
+    box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 160px;
+}
+
+.main-red {
+    color: white;
+    background-color: #F80000;
+}
+
+.lightest-red {
+    background-color: #EDDDDD;
+    color: #BA0102;
+}
+
+.dark-red {
+    color: white;
+    background-color: #BA0102;
+}
+
+.black {
+    background-color: #000000;
+    color: white;
+}
+
+.white {
+    background-color: white;
+    color: #BA0102;
+}
+
+.colour-set>div>h3 {
+    font-style: normal;
+    font-family: var(--medium), sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 112.5%;
 }
 
 section.three .wrapper {
@@ -304,7 +368,6 @@ section.three .wrapper {
 
 .section-three-note {
     width: 93%;
-    border: 2px solid grey;
 }
 
 .more {
@@ -340,11 +403,11 @@ section.three .wrapper {
 
 /* section four */
 
-section.four .inner {
-    display: grid;
-    grid-template-columns: auto;
-    border: 2px solid seagreen;
-    width: 1227.94px;
+section.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
 }
 
 .inn_ {
@@ -356,7 +419,6 @@ section.four .inner {
 .inn_ .first,
 .inn_ .second {
     flex: 1;
-    border: 2px solid seagreen;
 }
 
 .inn_ .second {
@@ -367,9 +429,7 @@ section.four .inner {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-section.four {
-    border: 2px solid magenta;
-}
+
 
 
 
@@ -379,50 +439,64 @@ section.four {
 section.five {
     display: grid;
     grid-template-columns: auto;
-    border: 2px solid magenta;
-    height: 826px;
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
 
-section.five .wrapper {
-    justify-content: center;
-}
-
-section.five .color {
+.home-away {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 58px;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 44px;
+
+    width: 533px;
+    height: 174px;
 }
 
-/* width: 957px; */
-section.five .inner {
+.home-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: start;
-    padding: 10px 0px 10px 10px;
-    gap: 10px;
-    border: 2px solid saddlebrown;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 74px;
+    padding: 10px 231px 10px 281px;
+}
+
+section.five h3 {
+    color: var(--tools);
 }
 
 /* section six */
 
 section.six {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
 }
 
-.magazine {
-    background-image: url(images/light_theatres_images/magazine.png);
-    width: 100%;
-    height: 517px;
+section.six p {
+    font-weight: 400;
+    font-family: var(--medium), sans-serif;
+    font-size: 64px;
+    line-height: 103%;
 }
+
+section.six span {
+    font-family: var(--bold), sans-serif;
+    color: var(--heading);
+}
+
 
 /* section seven */
 
 section.seven {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
 }
 
 .airport {
@@ -445,93 +519,59 @@ section.seven {
 /* secttion eight */
 
 section.eight {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
 }
 
-.apron {
-    background-image: url(images/light_theatres_images/apron.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-row: 1/span 2;
-}
-
-.first-cup {
-    background-image: url(images/light_theatres_images/first-cup.png);
-    width: 100%;
-    height: 353px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.second-cup {
-    background-image: url(images/light_theatres_images/second-cup.png);
-    width: 100%;
-    height: 353px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* section nine */
 
 
 section.nine {
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    height: 726.58px;
+    grid-template-columns: auto;
 }
 
-.popcorn {
-    background-image: url(images/light_theatres_images/light-popcorn.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-row: 1/span 2;
+.red-merch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pin {
-    background-image: url(images/light_theatres_images/light-pin.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.billboard {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px 10px 106px;
 }
 
-.wrist-band {
-    background-image: url(images/light_theatres_images/wrist-band.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.design-assets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-top: 80px;
+    gap: 44px;
+    align-self: start;
+    width: 235px;
+    height: 221px;
+}
+
+.design-assets>h4 {
+    color: var(--heading);
+    font-size: var(--paragraph);
 }
 
 /* section ten */
-
-
-/* section eleven */
-
-section.eleven {
-    display: grid;
-    grid-template-columns: auto auto;
-    height: 464px;
+section.ten {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 10px;
 }
-
-.first-ticket {
-    background-image: url(images/light_theatres_images/first-ticket.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.second-ticket {
-    background-image: url(images/light_theatres_images/second-ticket.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* section twelve */
-
-section.twelve {
-    height: 1134px;
-    background-image: url(images/light_theatres_images/merch.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 /* section thirteen */
 
@@ -590,9 +630,7 @@ section.fourteen h1 {
 
 }
 
-/* .four div {
-    border: 3px solid palevioletred;
-} */
+
 
 .contact {
     display: flex;

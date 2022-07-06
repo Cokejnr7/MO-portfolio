@@ -98,6 +98,7 @@ body {
     /* background-color: #2C2C2C; */
 }
 
+
 /* main {
     visibility: hidden;
 } */
@@ -190,6 +191,10 @@ section.two {
     display: grid;
     grid-template-columns: auto;
     gap: 63px;
+}
+
+section.two .wrapper {
+    padding-top: 124px;
 }
 
 section.two .inner {
@@ -404,8 +409,9 @@ section.six {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
 }
+
 
 .magazine {
     background-image: url(images/light_theatres_images/magazine.png);
@@ -473,7 +479,7 @@ section.nine {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 /* section ten */
@@ -481,7 +487,7 @@ section.ten {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .billboard {
@@ -494,7 +500,7 @@ section.eleven {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 
