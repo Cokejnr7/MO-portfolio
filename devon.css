@@ -136,6 +136,17 @@ h3 {
     line-height: 98%;
 }
 
+p {
+    font-size: 19px;
+}
+
+.sub-headers,
+.design-assets {
+    font-size: var(--paragraph);
+}
+
+
+
 .logo {
     margin-top: 36px;
 }
@@ -511,13 +522,12 @@ section.eleven {
     padding: 0px;
     gap: 44px;
     align-self: center;
-    width: 235px;
-    height: 221px;
 }
 
 .design-assets>h4,
 .art-direction>h4 {
     color: var(--heading);
+
 }
 
 /* section twelve */

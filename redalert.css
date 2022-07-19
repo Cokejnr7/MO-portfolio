@@ -499,23 +499,6 @@ section.seven {
     padding: 10px 0px;
 }
 
-.airport {
-    background-image: url(images/light_theatres_images/airport.png);
-    width: 100%;
-    height: 464px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.iphone {
-    background-image: url(images/light_theatres_images/iphone.png);
-    width: 100%;
-    height: 464px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 /* secttion eight */
 
 section.eight {
