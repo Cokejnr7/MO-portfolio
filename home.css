@@ -148,12 +148,13 @@ main {
 
 h2 {
     font-family: var(--extra-bold), sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: var(--heading-two);
     line-height: 86.4px;
     padding: 0;
     margin: 0;
     color: var(--heading);
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -192,6 +193,9 @@ section.one .second {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+}
+section.one p{
+line-height: 139.5%;
 }
 
 .three {
@@ -282,29 +286,33 @@ article {
     color: var(--quote);
     position: relative;
     margin-left: 54px;
+    line-height: 1.5;
+}
+.quote::before{
+    content: "\"";
+    color: var(--quotes-mark);
+    font-size: 80px;
+    transform: rotate(-180deg);
+    position: absolute;
+    left: -60px;
+    top: -50px;
+    font-style: italic;
+}
+.quote::after{
+    content: "\"";
+    color: var(--quotes-mark);
+    font-size: 80px;
+    position: absolute;
+    right: 30px;
+    bottom: -80px;
+    font-style: italic;
 }
 
 .quote-top {
     position: relative;
 }
 
-/* .quote::after {
-    content: "\"";
-    position: absolute;
-    color: var(--quotes-mark);
-    font-size: 2.4em;
-    top: 120px;
-    transform: translateX(95px);
-}
 
-.quote::before {
-    content: "\"";
-    position: absolute;
-    transform: translateX(-54px);
-    color: var(--quotes-mark);
-    bottom: 80px;
-    font-size: 2.4em;
-} */
 .qoute {
     line-height: 152%;
 }
@@ -313,6 +321,12 @@ article {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+article>p{
+    line-height: 152%;
+}
+.last-article>p{
+    line-height: 152%;
 }
 
 .last-article-top {
@@ -398,7 +412,6 @@ img.davido-exclusive {
 }
 
 img {
-    transition: transform 700ms ease-in-out;
     cursor: pointer;
     width: 100%;
     height: auto;

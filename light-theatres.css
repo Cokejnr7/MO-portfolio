@@ -199,7 +199,7 @@ section.two {
 }
 
 section.two .wrapper {
-    padding-top: 124px;
+    padding-top: 124px ;
 }
 
 section.two .inner {
@@ -234,7 +234,6 @@ section.two .inner {
 }
 
 .sub-headers {
-    width: 150px;
     height: 43px;
     padding: 10px;
 }
@@ -296,7 +295,9 @@ section.three {
 
 section.three .wrapper {
     gap: 25px;
-    align-items: space-around;
+    padding-right: 96px ;
+    padding-bottom:  50px;
+    padding-left: 40px;
 }
 
 .section-three-note {
@@ -357,10 +358,49 @@ section.four .inner {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -1px 145px rgba(0, 0, 0, 0.1);
 }
 
+.quote {
+    font-size: 2em;
+    font-family: var(--bold), sans-serif;
+    font-weight: 700;
+    color: var(--quote);
+    position: relative;
+    margin-left: 54px;
+    line-height: 152%;
+}
+.quote::before{
+    content: "\"";
+    color: var(--quotes-mark);
+    font-size: 80px;
+    transform: rotate(-180deg);
+    position: absolute;
+    left: -60px;
+    top: -20px;
+    font-style: italic;
+}
+.quote::after{
+    content: "\"";
+    color: var(--quotes-mark);
+    font-size: 80px;
+    position: absolute;
+    right: 120px;
+    bottom: -30px;
+    font-style: italic;
+}
 
+section.four .first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 88px;
+
+}
+section.four .container{
+    padding: 10px 35px 10px 147px;
+}
+/* section four */
 
 /* section five */
 
